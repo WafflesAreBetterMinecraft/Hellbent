@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hellbent",
+	"version": "${version}",
+	"name": "Hellbent",
+	"description": "Who needs the Overworld anyway?",
+	"authors": [
+		"WafflesAreBetter"
+	],
+	"contact": {
+		"homepage": "https://wafcorp.org/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hellbent/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.wafcorp.hellbent.Hellbent"
+		],
+		"fabric-datagen": [
+			"org.wafcorp.hellbent.HellbentDataGenerator"
+		],
+		"client": [
+			"org.wafcorp.hellbent.HellbentClient"
+		]
+	},
+	"mixins": [
+		"hellbent.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
